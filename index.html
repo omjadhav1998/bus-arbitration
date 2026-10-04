@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BusX | Bus Arbitration</title>
+
+    <!-- Google Fonts -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="logo">
+        BUS<span>X</span>
+    </div>
+
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#methods">Methods</a>
+
+        <a href="#simulation">Simulation</a>
+
+        <a href="#quiz">Quiz</a>
+
+    </nav>
+
+
+    <button
+        class="nav-btn"
+        onclick="scrollToSimulation()"
+    >
+        Try Simulation
+    </button>
+
+</header>
+
+
+
+<!-- =====================================================
+     LIVE LANDING PAGE
+===================================================== -->
+
+<section
+    id="home"
+    class="hero live-hero"
+>
+
+
+    <!-- VIDEO BACKGROUND -->
+
+    <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+    >
+
+        <source
+            src="assets/bus-background.mp4"
+            type="video/mp4"
+        >
+
+        Your browser does not support video.
+
+    </video>
+
+
+
+    <!-- DARK OVERLAY -->
+
+    <div class="hero-overlay"></div>
+
+
+
+    <!-- CYBER GRID -->
+
+    <div class="cyber-grid"></div>
+
+
+
+    <!-- =================================================
+         HERO CONTENT
+    ================================================== -->
+
+    <div class="hero-content live-content">
+
+
+        <div class="live-badge">
+
+            <span class="live-dot"></span>
+
+            INTERACTIVE BUS ARBITRATION SYSTEM
+
+        </div>
+
+
+
+        <p class="small-title">
+
+            DIGITAL SYSTEM DESIGN &
+            COMPUTER ORGANIZATION
+
+        </p>
+
+
+
+        <h1>
+
+            BUS
+
+            <span>
+                ARBITRATION
+            </span>
+
+        </h1>
+
+
+
+        <p class="hero-text">
+
+            When multiple devices compete for a shared
+            system bus, the arbiter decides who gets access.
+
+        </p>
+
+
+
+        <div class="hero-buttons">
+
+
+            <button
+                class="primary-btn"
+                onclick="scrollToSimulation()"
+            >
+
+                ⚡ Launch Simulator
+
+            </button>
+
+
+
+            <button
+                class="secondary-btn"
+                onclick="scrollToSection('about')"
+            >
+
+                Explore System →
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- SYSTEM STATUS -->
+
+        <div class="system-status">
+
+
+            <div class="status-item">
+
+                <span class="status-light"></span>
+
+                <div>
+
+                    <small>
+                        SYSTEM
+                    </small>
+
+                    <strong>
+                        ONLINE
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="status-item">
+
+                <span class="status-icon">
+                    ◉
+                </span>
+
+                <div>
+
+                    <small>
+                        DEVICES
+                    </small>
+
+                    <strong>
+                        04 ACTIVE
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="status-item">
+
+                <span class="status-icon">
+                    ⚡
+                </span>
+
+                <div>
+
+                    <small>
+                        BUS
+                    </small>
+
+                    <strong>
+                        READY
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =================================================
+         LIVE NETWORK
+    ================================================== -->
+
+    <div class="live-network">
+
+
+        <!-- CPU -->
+
+        <div class="network-device cpu-device">
+
+            <div class="device-icon">
+                CPU
+            </div>
+
+            <span>
+                PROCESSOR
+            </span>
+
+        </div>
+
+
+
+        <!-- DMA -->
+
+        <div class="network-device dma-device">
+
+            <div class="device-icon">
+                DMA
+            </div>
+
+            <span>
+                TRANSFER
+            </span>
+
+        </div>
+
+
+
+        <!-- I/O -->
+
+        <div class="network-device io-device">
+
+            <div class="device-icon">
+                I/O
+            </div>
+
+            <span>
+                INPUT / OUTPUT
+            </span>
+
+        </div>
+
+
+
+        <!-- GPU -->
+
+        <div class="network-device gpu-device">
+
+            <div class="device-icon">
+                GPU
+            </div>
+
+            <span>
+                GRAPHICS
+            </span>
+
+        </div>
+
+
+
+        <!-- CENTRAL ARBITER -->
+
+        <div class="network-core">
+
+
+            <div class="core-ring">
+
+                <div class="core-inner">
+                    ⚙
+                </div>
+
+            </div>
+
+
+            <strong>
+                ARBITER
+            </strong>
+
+
+            <small>
+                DECISION ENGINE
+            </small>
+
+
+        </div>
+
+
+
+        <!-- CONNECTION LINES -->
+
+        <div class="connection connection-1"></div>
+
+        <div class="connection connection-2"></div>
+
+        <div class="connection connection-3"></div>
+
+        <div class="connection connection-4"></div>
+
+
+
+        <!-- MOVING DATA -->
+
+        <div class="data-packet packet-1"></div>
+
+        <div class="data-packet packet-2"></div>
+
+        <div class="data-packet packet-3"></div>
+
+        <div class="data-packet packet-4"></div>
+
+
+    </div>
+
+
+
+    <!-- SCROLL INDICATOR -->
+
+    <div class="scroll-indicator">
+
+        <span></span>
+
+        SCROLL TO EXPLORE
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT SECTION
+===================================================== -->
+
+<section
+    id="about"
+    class="section"
+>
+
+
+    <div class="section-heading">
+
+        <p>
+            01 — FUNDAMENTALS
+        </p>
+
+        <h2>
+            What is Bus Arbitration?
+        </h2>
+
+    </div>
+
+
+
+    <div class="about-grid">
+
+
+        <div class="about-text">
+
+
+            <p>
+
+                A <strong>bus</strong> is a shared communication
+                pathway used by different components of a
+                computer system.
+
+            </p>
+
+
+            <p>
+
+                When multiple devices request access to the bus
+                at the same time, a conflict can occur.
+
+            </p>
+
+
+            <p>
+
+                <strong>Bus arbitration</strong> is the process
+                of deciding which device gets permission to use
+                the bus.
+
+            </p>
+
+
+
+            <div class="info-box">
+
+                <span>
+                    💡
+                </span>
+
+                <div>
+
+                    <strong>
+                        Simple Example
+                    </strong>
+
+                    <p>
+
+                        Imagine one road with several vehicles.
+                        A traffic controller decides which vehicle
+                        can move first.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- PROCESS -->
+
+        <div class="flow-card">
+
+
+            <h3>
+                Basic Process
+            </h3>
+
+
+            <div class="flow">
+
+
+                <div class="flow-item">
+
+                    <span>
+                        01
+                    </span>
+
+                    <p>
+                        Devices Request
+                    </p>
+
+                </div>
+
+
+                <div class="arrow">
+                    →
+                </div>
+
+
+                <div class="flow-item">
+
+                    <span>
+                        02
+                    </span>
+
+                    <p>
+                        Arbiter Decides
+                    </p>
+
+                </div>
+
+
+                <div class="arrow">
+                    →
+                </div>
+
+
+                <div class="flow-item">
+
+                    <span>
+                        03
+                    </span>
+
+                    <p>
+                        Bus Granted
+                    </p>
+
+                </div>
+
+
+                <div class="arrow">
+                    →
+                </div>
+
+
+                <div class="flow-item">
+
+                    <span>
+                        04
+                    </span>
+
+                    <p>
+                        Data Transfer
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     DEVICES SECTION
+===================================================== -->
+
+<section class="section dark-section">
+
+
+    <div class="section-heading">
+
+        <p>
+            02 — SYSTEM DEVICES
+        </p>
+
+        <h2>
+            One Bus. Multiple Devices.
+        </h2>
+
+    </div>
+
+
+
+    <div class="problem-grid">
+
+
+        <div class="problem-card">
+
+            <div class="icon">
+                🧠
+            </div>
+
+            <h3>
+                CPU
+            </h3>
+
+            <p>
+
+                The main processor may request the bus
+                to communicate with memory or I/O devices.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="problem-card">
+
+            <div class="icon">
+                💾
+            </div>
+
+            <h3>
+                DMA
+            </h3>
+
+            <p>
+
+                DMA can transfer data between memory
+                and peripherals without continuous CPU involvement.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="problem-card">
+
+            <div class="icon">
+                🔌
+            </div>
+
+            <h3>
+                I/O
+            </h3>
+
+            <p>
+
+                Input and output devices may request access
+                to the shared system bus.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="problem-card">
+
+            <div class="icon">
+                🎮
+            </div>
+
+            <h3>
+                GPU
+            </h3>
+
+            <p>
+
+                A high-performance device that may also
+                request bus access.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     METHODS
+===================================================== -->
+
+<section
+    id="methods"
+    class="section"
+>
+
+
+    <div class="section-heading">
+
+        <p>
+            03 — ARBITRATION METHODS
+        </p>
+
+        <h2>
+            How Can the Bus Be Controlled?
+        </h2>
+
+    </div>
+
+
+
+    <div class="methods-grid">
+
+
+        <div class="method-card">
+
+            <div class="method-number">
+                01
+            </div>
+
+            <h3>
+                Centralized Arbitration
+            </h3>
+
+            <p>
+
+                A central arbiter receives requests and
+                decides which device gets control of the bus.
+
+            </p>
+
+            <span class="tag">
+                CENTRAL ARBITER
+            </span>
+
+        </div>
+
+
+
+        <div class="method-card">
+
+            <div class="method-number">
+                02
+            </div>
+
+            <h3>
+                Daisy Chain
+            </h3>
+
+            <p>
+
+                Grant signals pass through devices in a fixed
+                order. The first requesting device receives
+                the bus.
+
+            </p>
+
+            <span class="tag">
+                FIXED ORDER
+            </span>
+
+        </div>
+
+
+
+        <div class="method-card">
+
+            <div class="method-number">
+                03
+            </div>
+
+            <h3>
+                Parallel Arbitration
+            </h3>
+
+            <p>
+
+                Multiple request signals reach the arbiter
+                simultaneously and priority determines the winner.
+
+            </p>
+
+            <span class="tag">
+                PRIORITY BASED
+            </span>
+
+        </div>
+
+
+
+        <div class="method-card">
+
+            <div class="method-number">
+                04
+            </div>
+
+            <h3>
+                Distributed Arbitration
+            </h3>
+
+            <p>
+
+                Devices participate in the arbitration process
+                instead of depending completely on one central arbiter.
+
+            </p>
+
+            <span class="tag">
+                DISTRIBUTED
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     INTERACTIVE SIMULATION
+===================================================== -->
+
+<section
+    id="simulation"
+    class="section simulation-section"
+>
+
+
+    <div class="section-heading">
+
+        <p>
+            04 — INTERACTIVE LAB
+        </p>
+
+        <h2>
+            Bus Arbitration Simulator
+        </h2>
+
+        <p class="subtitle">
+
+            Select devices, set their priorities and let
+            the arbiter decide.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="simulator">
+
+
+        <!-- =============================================
+             DEVICE PANEL
+        ============================================== -->
+
+        <div class="device-panel">
+
+
+            <div class="panel-title">
+
+                <h3>
+                    Device Requests
+                </h3>
+
+
+                <button
+                    onclick="resetSimulation()"
+                    class="reset-btn"
+                >
+
+                    Reset
+
+                </button>
+
+            </div>
+
+
+
+            <!-- CPU -->
+
+            <div class="device-row">
+
+                <div class="device-name">
+
+                    <span
+                        class="device-dot cpu-dot"
+                    ></span>
+
+                    CPU
+
+                </div>
+
+
+                <label class="switch">
+
+                    <input
+                        type="checkbox"
+                        id="cpuRequest"
+                    >
+
+                    <span class="slider"></span>
+
+                </label>
+
+
+                <input
+                    type="number"
+                    id="cpuPriority"
+                    value="4"
+                    min="1"
+                    max="10"
+                    class="priority-input"
+                >
+
+            </div>
+
+
+
+            <!-- DMA -->
+
+            <div class="device-row">
+
+                <div class="device-name">
+
+                    <span
+                        class="device-dot dma-dot"
+                    ></span>
+
+                    DMA
+
+                </div>
+
+
+                <label class="switch">
+
+                    <input
+                        type="checkbox"
+                        id="dmaRequest"
+                    >
+
+                    <span class="slider"></span>
+
+                </label>
+
+
+                <input
+                    type="number"
+                    id="dmaPriority"
+                    value="3"
+                    min="1"
+                    max="10"
+                    class="priority-input"
+                >
+
+            </div>
+
+
+
+            <!-- I/O -->
+
+            <div class="device-row">
+
+                <div class="device-name">
+
+                    <span
+                        class="device-dot io-dot"
+                    ></span>
+
+                    I/O
+
+                </div>
+
+
+                <label class="switch">
+
+                    <input
+                        type="checkbox"
+                        id="ioRequest"
+                    >
+
+                    <span class="slider"></span>
+
+                </label>
+
+
+                <input
+                    type="number"
+                    id="ioPriority"
+                    value="2"
+                    min="1"
+                    max="10"
+                    class="priority-input"
+                >
+
+            </div>
+
+
+
+            <!-- GPU -->
+
+            <div class="device-row">
+
+                <div class="device-name">
+
+                    <span
+                        class="device-dot gpu-dot"
+                    ></span>
+
+                    GPU
+
+                </div>
+
+
+                <label class="switch">
+
+                    <input
+                        type="checkbox"
+                        id="gpuRequest"
+                    >
+
+                    <span class="slider"></span>
+
+                </label>
+
+
+                <input
+                    type="number"
+                    id="gpuPriority"
+                    value="1"
+                    min="1"
+                    max="10"
+                    class="priority-input"
+                >
+
+            </div>
+
+
+
+            <button
+                class="grant-btn"
+                onclick="runArbitration()"
+            >
+
+                ⚡ Run Arbitration
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- =============================================
+             BUS VISUALIZATION
+        ============================================== -->
+
+        <div class="bus-panel">
+
+
+            <div
+                class="bus-status"
+                id="busStatus"
+            >
+
+                BUS READY
+
+            </div>
+
+
+
+            <div class="bus-visual">
+
+
+                <div class="device-node node1">
+                    CPU
+                </div>
+
+
+                <div class="device-node node2">
+                    DMA
+                </div>
+
+
+                <div class="device-node node3">
+                    I/O
+                </div>
+
+
+                <div class="device-node node4">
+                    GPU
+                </div>
+
+
+
+                <div class="main-bus">
+
+                    <span>
+                        SHARED SYSTEM BUS
+                    </span>
+
+                </div>
+
+
+
+                <div class="arbiter">
+
+                    <div class="arbiter-circle">
+                        ⚙
+                    </div>
+
+                    <strong>
+                        ARBITER
+                    </strong>
+
+                    <small>
+                        Decision Engine
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div
+                class="result"
+                id="result"
+            >
+
+                <span>
+                    Waiting for requests...
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     DECISION LOGIC
+===================================================== -->
+
+<section class="section priority-section">
+
+
+    <div class="section-heading">
+
+        <p>
+            05 — DECISION LOGIC
+        </p>
+
+        <h2>
+            How Does the Arbiter Decide?
+        </h2>
+
+    </div>
+
+
+
+    <div class="logic-container">
+
+
+        <div class="logic-step">
+
+            <span>
+                01
+            </span>
+
+            <h3>
+                Check Requests
+            </h3>
+
+            <p>
+
+                The arbiter checks which devices are requesting
+                access to the bus.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="logic-line"></div>
+
+
+
+        <div class="logic-step">
+
+            <span>
+                02
+            </span>
+
+            <h3>
+                Compare Priority
+            </h3>
+
+            <p>
+
+                Requested devices are compared according to
+                the selected arbitration rule.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="logic-line"></div>
+
+
+
+        <div class="logic-step">
+
+            <span>
+                03
+            </span>
+
+            <h3>
+                Grant Bus
+            </h3>
+
+            <p>
+
+                The selected device receives permission
+                to use the bus.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     QUIZ
+===================================================== -->
+
+<section
+    id="quiz"
+    class="section quiz-section"
+>
+
+
+    <div class="section-heading">
+
+        <p>
+            06 — TEST YOUR KNOWLEDGE
+        </p>
+
+        <h2>
+            Quick Quiz
+        </h2>
+
+    </div>
+
+
+
+    <div class="quiz-card">
+
+
+        <h3 id="question">
+
+            What is the main purpose of bus arbitration?
+
+        </h3>
+
+
+
+        <div class="options">
+
+
+            <button
+                onclick="checkAnswer(this, false)"
+            >
+
+                Increase CPU speed
+
+            </button>
+
+
+
+            <button
+                onclick="checkAnswer(this, true)"
+            >
+
+                Decide which device gets bus access
+
+            </button>
+
+
+
+            <button
+                onclick="checkAnswer(this, false)"
+            >
+
+                Store data permanently
+
+            </button>
+
+
+
+            <button
+                onclick="checkAnswer(this, false)"
+            >
+
+                Increase memory size
+
+            </button>
+
+
+        </div>
+
+
+
+        <div id="quizResult"></div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+    <div class="footer-logo">
+
+        BUS<span>X</span>
+
+    </div>
+
+
+    <p>
+
+        Interactive Bus Arbitration Learning Platform
+
+    </p>
+
+
+    <p class="copyright">
+
+        © 2026 BusX • DSDCO Mini Project
+
+    </p>
+
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
